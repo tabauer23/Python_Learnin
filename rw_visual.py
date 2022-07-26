@@ -4,7 +4,7 @@ from random_walk import RandomWalk
 # Keep making new walks, as long as the program is active. 
 while True:
     # Make a new random walk, and plot the points.
-    rw=RandomWalk(500000)
+    rw=RandomWalk()
     rw.fill_walk()
 
     point_numbers = list(range(rw.num_points))
@@ -14,7 +14,9 @@ while True:
     plt.scatter(0, 0, c='green', edgecolors='none', s=100)
     plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
     plt.show()
+    plt.close('all')
 
+    
     keep_running = input("Make another walk (y/n)?: ").lower()
     if not keep_running.startswith('y'):
         break
