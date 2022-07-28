@@ -4,9 +4,7 @@ import pandas as pd
 
 #Sklearn for modeling
 from sklearn.tree import DecisionTreeClassifier
-<<<<<<< HEAD
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.externals import joblib
 =======
 
 >>>>>>> 31db6185e2a2690babf134a92575561d129b68bc
