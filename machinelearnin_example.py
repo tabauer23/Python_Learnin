@@ -40,3 +40,6 @@ model.fit(X,y)
 
 #make a couple hardcoded predictions.
 model.predict([[21,1], [22,0]])
+
+
+#This was updated from my laptop instead of desktop.
